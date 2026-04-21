@@ -1,0 +1,22 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100vw;
+    height: auto;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translate(95%, -250%);
+    
+}
+
+.title-top {
+    position: relative;
+}
+
