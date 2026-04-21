@@ -1,4 +1,61 @@
 
+@font-face {
+    font-family: "roca";
+    src: url(roca-one-bold/roca-one-bold.ttf);
+    font-style: normal;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* stays above content!!!!!!!! */
+    width: 100%;
+    background-color: var(--base-color);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 35px;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+nav li :hover {
+    transition: 100ms ease;
+    scale: 1.05;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'roca', 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+    text-shadow: 2px 1px .25px var(--black);
+}
+
+:root {
+    --base-color: #ffc2c2;
+    --primary-color: #fff27d;
+    --secondary-color: #fff5ec;
+    --black: #000000;
+}
+
+h1{
+    font-family: 'roca','Times New Roman', Times, serif;
+    font-size: 125px;
+    color: var(--primary-color);
+    text-shadow: 2px 1px 2px var(--black);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,8 +68,10 @@ img {
 .centered-text {
     position: absolute;
     top: 50%;
-    width: 50%;
-    transform: translate(95%, -250%);
+    width: 100%;
+    transform: translate(0%, -90%);
+    text-align: center;
+    line-height: 1;
     
 }
 
@@ -20,3 +79,35 @@ img {
     position: relative;
 }
 
+h3 {
+    font-family: 'roca','Times New Roman', Times, serif;
+    color: black;
+    text-shadow: none;
+    font-size: 55px;
+}
+
+.instructions {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: rotate(-3deg);
+    transform: translate(-15%, 155%);
+    text-align: center;
+    line-height: 1;
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width:1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 1em;
+    }
+
+}
