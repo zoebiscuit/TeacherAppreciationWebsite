@@ -10,7 +10,7 @@ nav {
     top: 0;
     z-index: 1000; /* stays above content!!!!!!!! */
     width: 100%;
-    background-color: var(--base-color);
+    background-color: var(--third-color);
 }
 
 nav ul {
@@ -46,12 +46,13 @@ h2 {
     --base-color: #ffc2c2;
     --primary-color: #fff27d;
     --secondary-color: #fff5ec;
+    --third-color: #ffc2c1;
     --black: #000000;
 }
 
 h1{
     font-family: 'roca','Times New Roman', Times, serif;
-    font-size: 125px;
+    font-size: 165px;
     color: var(--primary-color);
     text-shadow: 2px 1px 2px var(--black);
 }
@@ -59,6 +60,7 @@ h1{
 body {
     margin: 0;
     padding: 0;
+    background: var(--secondary-color);
 }
 img {
     width: 100vw;
@@ -69,7 +71,7 @@ img {
     position: absolute;
     top: 50%;
     width: 100%;
-    transform: translate(0%, -90%);
+    transform: translate(0%, -100%);
     text-align: center;
     line-height: 1;
     
