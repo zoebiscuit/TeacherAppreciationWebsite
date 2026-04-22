@@ -39,7 +39,7 @@ a {
 h2 {
     font-family: 'roca', 'Times New Roman', Times, serif;
     color: var(--primary-color);
-    text-shadow: 2px 1px .25px var(--black);
+    text-shadow: 1.5px 0px 0px black;
 }
 
 :root {
@@ -85,18 +85,51 @@ h3 {
     font-family: 'roca','Times New Roman', Times, serif;
     color: black;
     text-shadow: none;
-    font-size: 55px;
+    font-size: 65px;
 }
 
 .instructions {
     position: absolute;
     top: 50%;
     width: 100%;
-    transform: rotate(-3deg);
-    transform: translate(-15%, 155%);
+    transform: rotate(-3deg) translate(-18%, 140%);
     text-align: center;
     line-height: 1;
     
+}
+
+.notes-container {
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    margin: .5em;
+
+}
+
+.notes-container img{
+    scale: 85%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.notes-container img:hover{
+    transition: 100ms ease;
+    transform: rotate(-2deg);
+}
+
+.notes-container img:not(:hover){
+    transition: 100ms ease;
+}
+
+h1:hover {
+    transition: 100ms ease;
+    transform: rotate(-2deg);
+}
+
+h1:not(:hover) {
+    transition: 100ms ease;
 }
 
 @media only screen and (min-width: 0px) and (max-width:1024px) {
