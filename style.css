@@ -132,6 +132,21 @@ h1:not(:hover) {
     transition: 100ms ease;
 }
 
+input {
+    font-family: 'roca','Times New Roman', Times, serif;
+    padding:1em;
+    border-radius: 2em;
+}
+
+button {
+    font-family: 'roca','Times New Roman', Times, serif;
+}
+
+button:hover {
+    transition: 100ms ease;
+    scale: 1.05;
+}
+
 @media only screen and (min-width: 0px) and (max-width:1024px) {
     h1 {
         font-size: 50px;
