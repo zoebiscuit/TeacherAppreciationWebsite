@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'winkle';
+    src: url(winkle/Winkle-Regular.otf);
+    font-style: normal;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -40,6 +46,7 @@ h2 {
     font-family: 'roca', 'Times New Roman', Times, serif;
     color: var(--primary-color);
     text-shadow: 1.5px 0px 0px black;
+    font-size: 30px;
 }
 
 :root {
@@ -61,6 +68,8 @@ body {
     margin: 0;
     padding: 0;
     background: var(--secondary-color);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 img {
     width: 100vw;
@@ -74,8 +83,33 @@ img {
     transform: translate(0%, -100%);
     text-align: center;
     line-height: 1;
+    animation: rotating 5s ease-in-out infinite;
     
 }
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg) translate(0%, -100%);
+    }
+
+    50% {
+        transform: rotate(-1deg) translate(0%, -100%);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(0%, -100%);
+    }
+}
+
+
+/*h1:hover {
+    transition: 100ms ease;
+    transform: rotate(-2deg);
+}
+
+h1:not(:hover) {
+    transition: 100ms ease;
+} */
 
 .title-top {
     position: relative;
@@ -86,6 +120,7 @@ h3 {
     color: black;
     text-shadow: none;
     font-size: 65px;
+    letter-spacing: .08em;
 }
 
 .instructions {
@@ -114,21 +149,12 @@ h3 {
     object-fit: cover;
 }
 
-.notes-container img:hover{
+.note:hover{
     transition: 100ms ease;
     transform: rotate(-2deg);
 }
 
-.notes-container img:not(:hover){
-    transition: 100ms ease;
-}
-
-h1:hover {
-    transition: 100ms ease;
-    transform: rotate(-2deg);
-}
-
-h1:not(:hover) {
+.note:not(:hover){
     transition: 100ms ease;
 }
 
@@ -136,15 +162,73 @@ input {
     font-family: 'roca','Times New Roman', Times, serif;
     padding:1em;
     border-radius: 2em;
+    margin: 1em;
+    font-size: 15px;
+    background-color:white;
+    color: darkgray;
 }
 
 button {
     font-family: 'roca','Times New Roman', Times, serif;
+    padding: .75em 1.5em;
+    margin: 1em;
+    border-radius: 2em;
+    font-size: 18px;
+    background-color: var(--secondary-color);
 }
 
 button:hover {
     transition: 100ms ease;
     scale: 1.05;
+}
+
+.note-text {
+    position: relative;
+    /*top:-50%; */
+    width:100%;
+    /*right: -50%; */
+    transform: translate(17%, -330%);
+    font-size: 30px;
+
+}
+
+p {
+    font-family:'winkle','Times New Roman', Times, serif;
+    transform: rotate(-3.5deg);
+    color: darkslategrey;
+
+}
+
+.see-more h3:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--third-color);
+    text-decoration-thickness: 6px;
+    transition: 100ms ease;
+    scale: 1.065;
+}
+
+.see-more h3:not(:hover) {
+    transition: 100ms ease;
+    scale: 1;
+}
+
+h4 {
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    font-size: 30px;
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    font-family: 'roca','Times New Roman', Times, serif;
+    color: darkslategrey
+}
+
+.centered-text2 {
+    position: absolute;
+    width: 100%;
+    transform: translate(0%, -2000%);
+    text-align: center;
+    line-height: 1;
 }
 
 @media only screen and (min-width: 0px) and (max-width:1024px) {
