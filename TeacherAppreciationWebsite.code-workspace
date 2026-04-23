@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "TeacherAppreciationWebsite",
+			"path": "."
+		},
+		{
+			"name": "winkle",
+			"path": "../../../Downloads/winkle"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TeacherAppreciationWebsite"
+	}
+}
