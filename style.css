@@ -246,21 +246,60 @@ p {
     scale: 1;
 }
 
+.bottom {
+    object-fit: cover;
+    position: relative;
+    display: block;
+    flex-direction: row;
+}
+
+.bottom img {
+    z-index: 1000;
+    margin: 0;
+    vertical-align: bottom;
+
+}
+
+#img-1 {
+    transform: translate(-26%, -235%) scale(.5);
+}
+#img-1:hover {
+    transition: 100ms ease;
+    scale: 1.005;
+}
+
+#img-2 {
+    transform: translate(1%, -150%) scale(.5);
+}
+#img-2:hover {
+    transition: 100ms ease;
+    scale: 1.005;
+
+}
+
+#img-3 {
+    transform: translate(29%, -335%) scale(.5);
+}
+#img-3:hover {
+    transition: 100ms ease;
+    scale: 1.005;
+
+}
+
 h4 {
-    font-size: 20px;
+    font-size: 2rem;
     margin:0;
     padding:0;
-    font-size: 30px;
     text-decoration:underline;
     text-decoration-thickness: 2px;
     font-family: 'roca','Times New Roman', Times, serif;
     color: darkslategrey
 }
 
-.centered-text2 {
+.centered-bottom-text {
     position: absolute;
     width: 100%;
-    transform: translate(0%, -2000%);
+    transform: translate(1%, -7700%);
     text-align: center;
     line-height: 1;
 }
@@ -295,7 +334,7 @@ h4 {
     }
 
     .instructions {
-         transform: rotate(-3deg) translate(-8%, -580%);
+        transform: rotate(-3deg) translate(-8%, -580%);
         font-size: .1rem;
     }
 
