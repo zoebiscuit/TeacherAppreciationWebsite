@@ -293,15 +293,16 @@ h4 {
     text-decoration:underline;
     text-decoration-thickness: 2px;
     font-family: 'roca','Times New Roman', Times, serif;
-    color: darkslategrey
 }
 
 .centered-bottom-text {
     position: absolute;
     width: 100%;
-    transform: translate(1%, -7700%);
+    transform: translate(1%, -800%);
     text-align: center;
     line-height: 1;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--black);
 }
 
 @media only screen and (min-width: 0px) and (max-width:1024px) {
