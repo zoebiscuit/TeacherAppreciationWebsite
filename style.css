@@ -46,7 +46,7 @@ a {
 h2 {
     font-family: 'roca', 'Times New Roman', Times, serif;
     color: var(--primary-color);
-    text-shadow: 1.5px 0px 0px black;
+    text-shadow: black 1.5px 0px 0px ;
     font-size: 30px;
 }
 
@@ -62,7 +62,7 @@ h1{
     font-family: 'roca','Times New Roman', Times, serif;
     font-size: 165px;
     color: var(--primary-color);
-    text-shadow: 2px 1px 2px var(--black);
+    text-shadow: var(--black) 2px 1px 2px;
 }
 
 body {
@@ -360,11 +360,11 @@ h4 {
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
 
     .centered-bottom-text {
-        transform: translate(-6%, -450%) rotate(-1deg);
+        transform: translate(-3%, -450%) rotate(-1deg);
     }
 
 
