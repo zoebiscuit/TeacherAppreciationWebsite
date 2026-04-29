@@ -11,6 +11,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'roca-phone';
+    src: url(fonnts.com-Roca-Regular.otf);
+    font-style: normal;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -308,10 +314,12 @@ h4 {
 @media only screen and (min-width: 0px) and (max-width:1024px) {
     h1 {
         font-size: 8rem;
+        font-family:'roca-phone','Times New Roman', Times, serif;
     }
 
     h2 {
         font-size: 3.5rem;
+        font-family:'roca-phone','Times New Roman', Times, serif;
     }
 
     h3 {
@@ -361,6 +369,7 @@ h4 {
 
     h4 {
         font-size: 2.25rem;
+        font-family:'roca-phone','Times New Roman', Times, serif;
     }
 
     .centered-bottom-text {
