@@ -17,8 +17,8 @@ Just scroll to navigate through the website. Click the "home" in the nav bar to 
 click "search your name" to go to the full notes page and find a teacher's name.
 
 ## Credits
-Me, myself, and I
-Computer Science Officer for testing the website
-Students from Computer Science Club for writing most of the notes
-W3 schools
-Stack Overflow Threads
+Me, myself, and I <br>
+Computer Science Officer for testing the website <br>
+Students from Computer Science Club for writing most of the notes <br>
+W3 schools <br>
+Stack Overflow Threads <br>
