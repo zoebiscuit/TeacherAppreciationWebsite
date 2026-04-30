@@ -10,11 +10,7 @@ I did all of the programming. <3
 
 
 ## About
-In the home page, it introduces you to a lovey and pink themed website. I wanted to website to seem full of care and personalize.
-As you scroll (or click the "search your name" button in the nav bar), you can find the notes for every teacher. The intention
-is that the teacher will search their name, directing them to their own personalized note. I gathered all these notes by asking 
-about 45+ students to write a note for every teacher and I put them on the website. As you scroll to the bottom, you can find pictures
-of kids working on those notes and a little sign off at the very bottom: "love, computer science club!"
+In the home page, it introduces you to a lovey and pink themed website. I wanted the website to seem full of care and be personalized.As you scroll (or click the "search your name" button in the nav bar), you can find the notes for every teacher. The intention is that the teacher will search their name, directing them to their own personalized note. I gathered all these notes by asking about 45+ students to write a note for every teacher and I put them on the website. As you scroll to the bottom, you can find pictures of kids working on those notes and a little sign off at the very bottom: "love, computer science club!"
 
 ## Controls
 Just scroll to navigate through the website. Click the "home" in the nav bar to return to the first page and 
