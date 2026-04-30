@@ -1,4 +1,4 @@
-Dear Teachers
+<h1>Dear Teachers</h1>
 
 For Teacher Appreciation Week, I decided to create a website that holds a personalized note for every single teacher at my highschool. 
 I programmed this purely out of HTML and CSS and got students to help me make a personalized note and spread some love to 145 teachers. 
