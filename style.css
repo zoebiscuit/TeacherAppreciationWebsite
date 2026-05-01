@@ -376,16 +376,13 @@ h4 {
 
 }
 
-@media only screen and (min-width: 1600px) and (min-height: 1000px) {
-    * {
-        zoom: 90%;
-    }
+@media only screen and (min-width: 1920px){
     .centered-bottom-text { 
         transform: translate(-3%, -530%) rotate(-1deg);
     }
 
     h4 {
-        font-size: 4rem;
+        font-size: 60px;
     }
 
     h3 {
