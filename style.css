@@ -377,6 +377,9 @@ h4 {
 }
 
 @media only screen and (min-width: 1800px) and (max-width:2000px) {
+    body {
+        zoom: 90%;
+    }
     .centered-bottom-text { 
         transform: translate(-3%, -500%) rotate(-1deg);
     }
@@ -411,7 +414,7 @@ h4 {
     }
 
     .note-name {
-        transform: translate(48%, -380%);
+        transform: translate(48%, -410%);
     }
 
     button {
@@ -421,5 +424,4 @@ h4 {
     input {
         font-size: 23px;
     }
-
 }
