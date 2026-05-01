@@ -378,7 +378,7 @@ h4 {
 
 @media only screen and (min-width: 1800px) and (max-width:2000px) {
     body {
-        zoom: 90%;
+        zoom: 80%;
     }
     .centered-bottom-text { 
         transform: translate(-3%, -500%) rotate(-1deg);
