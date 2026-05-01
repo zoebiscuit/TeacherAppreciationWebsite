@@ -375,3 +375,51 @@ h4 {
 
 
 }
+
+@media only screen and (min-width: 1080px) and (max-width:1920px) {
+    .centered-bottom-text { 
+        transform: translate(-3%, -500%) rotate(-1deg);
+    }
+
+    h4 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 90px;
+    }
+
+    .instructions {
+        transform: rotate(-3deg) translate(-12%, -310%);
+    }
+
+    h1 {
+        font-size: 230px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size:2.5rem;
+    }
+
+    .note-text {
+        width: 58%;
+        transform: translate(48%, -232%);
+    }
+
+    .note-name {
+        transform: translate(48%, -380%);
+    }
+
+    button {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: 23px;
+    }
+
+}
