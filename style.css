@@ -140,9 +140,10 @@ h3 {
 
 .instructions {
     position: absolute;
-    top: 50%;
+    top: 23%;
+    left: -15%;
     width: 100%;
-    transform: rotate(-3deg) translate(-12%, -310%);
+    transform: rotate(-3deg) /*translate(-12%, -310%)*/;
     text-align: center;
     line-height: 1;
     
@@ -208,6 +209,8 @@ input {
     font-size: 15px;
     background-color:white;
     color: darkgray;
+    border-style: solid;
+    border-color: dimgray;
 }
 
 button {
@@ -217,6 +220,8 @@ button {
     border-radius: 2em;
     font-size: 18px;
     background-color: var(--secondary-color);
+    border-style: solid;
+    border-color: dimgray;
 }
 
 button:hover {
@@ -268,7 +273,7 @@ button:hover {
     font-family:'winkle','Times New Roman', Times, serif;
     /* transform: rotate(-3.5deg); */
     color: darkslategrey;
-    display: inline;
+    /*display: inline;*/
     margin: 0;
     font-size: 1em;
     line-height: 1.25em;
@@ -305,32 +310,6 @@ button:hover {
 
 }
 
-#img-1 {
-    transform: translate(-26%, -235%) scale(.5);
-}
-/* #img-1:hover {
-    transition: 100ms ease;
-    scale: 1.005;
-} */
-
-#img-2 {
-    transform: translate(1%, -150%) scale(.5);
-}
-/* #img-2:hover {
-    transition: 100ms ease;
-    scale: 1.005;
-
-} */
-
-#img-3 {
-    transform: translate(29%, -335%) scale(.5);
-}
-/* #img-3:hover {
-    transition: 100ms ease;
-    scale: 1.005;
-
-} */
-
 h4 {
     font-size: 3rem;
     margin:0;
@@ -342,12 +321,17 @@ h4 {
 .centered-bottom-text {
     position: absolute;
     width: 100%;
-    transform: translate(-4%, -480%) rotate(-2deg);
+    bottom: 40%;
+    transform: rotate(-2deg);
     text-align: center;
     line-height: 1;
     color: var(--black);
     text-shadow: 1px 1px 2px var(--black);
 }
+
+footer h3{
+        font-size: 25px;
+    }
 
 
 
@@ -410,7 +394,8 @@ h4 {
     }
 
     .instructions {
-        transform: translate(-15%, -810%) rotate(-2deg);
+        top: 14%;
+        left: -16%
     }
 
     .instructions h3 {
@@ -422,7 +407,9 @@ h4 {
     }
 
     .centered-bottom-text {
-        transform: translate(-4%, -390%) rotate(-2deg);
+        text-shadow: dimgray;
+        bottom: 40%;
+        left: -3%;
     }
 
     h4 {
@@ -441,9 +428,21 @@ h4 {
         font-size: 6px;
     }
 
+    li {
+        text-shadow: dimgray;
+    }
+
     li img {
         height:auto;
         width: 30px;
+    }
+
+    .centered-text {
+        text-shadow: dimgray;
+    }
+
+    footer h3{
+        font-size: 12px;
     }
 
 }
@@ -458,7 +457,7 @@ h4 {
 
     .note {
        /* width: min(350px, calc(100vw - 24px));*/
-        /*width: 100%;*/
+        width: calc(100vw/2);
         height: calc(100% + 50px);
         aspect-ratio: 750 / 415;
         background-image: url('assets/paper-700.png');
@@ -468,5 +467,46 @@ h4 {
 
     .note-interior {
         position: relative;
+    }
+    .note-interior p{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .note-text p{
+        font-size: 40px;
+    }
+    .note-name p{
+        font-size: 55px;
+    }
+
+    .note-interior p{
+        width: 700px;
+    }
+
+    .centered-bottom-text h4{
+        font-size: 70px;
+    }
+
+     h1 {
+        font-size: 200px;
+    }
+
+    .instructions h3{
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size:50px;
+    }
+
+    nav img {
+        width: 80px;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 70px;
     }
 }
