@@ -45,6 +45,11 @@ nav li :hover {
     scale: 1.05;
 }
 
+li img {
+    height: 50px;
+    width: auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -158,11 +163,6 @@ h3 {
 
 }
 
-@media (min-width: 1500px) {
-    .notes-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 .notes-container img{
     transform: scale(1);
@@ -179,26 +179,26 @@ h3 {
     aspect-ratio: 16/7;
     min-width: 0;
     min-height: 1vw; */
-    background-image: url('assets/paper-750.png');
+    background-image: url('assets/paper-700.png');
     background-position: top left;
     background-size: auto;
     background-repeat: no-repeat;
     background-color: transparent;
     display: table;
-    width: 750px;
-    height: 415px;
+    width: 700px;
+    height: 400px;
     position: relative;
     margin: 0 auto 50px auto;
 }
 
-/* .note:hover{
+ .note:hover{
     transition: 100ms ease;
     transform: rotate(-2deg);
-} */
+} 
 
-/* .note:not(:hover){
+ .note:not(:hover){
     transition: 100ms ease;
-} */
+}
 
 input {
     font-family: 'roca','Times New Roman', Times, serif;
@@ -275,46 +275,6 @@ button:hover {
 
 }
 
-@media (max-width: 770px) {
-    .notes-container {
-        margin: 2rem 0;
-        padding: 0 12px;
-        box-sizing: border-box;
-    }
-
-    .note {
-        width: min(350px, calc(100vw - 24px));
-        height: auto;
-        aspect-ratio: 750 / 415;
-        background-image: url('assets/paper-350.png');
-        background-size: 100% auto;
-        background-position: top left;
-        
-    }
-
-    .note-interior {
-        left: 23.333%;
-        top: 33.976%;
-        width: 66.667%;
-        max-width: 66.667%;
-        transform: rotate(-3.5deg);
-    }
-
-    .note-name {
-        font-size: clamp(1rem, 4.2vw, 1.4rem);
-        margin: 0 0 0.35rem 0;
-    }
-
-    .note-text {
-        font-size: clamp(0.69rem, 2.45vw, 0.82rem);
-        line-height: 1.2;
-    }
-
-    .note-interior p {
-        line-height: 1.2;
-    }
-}
-
 /* */
 
 /* .see-more h3:hover {
@@ -387,4 +347,126 @@ h4 {
     line-height: 1;
     color: var(--black);
     text-shadow: 1px 1px 2px var(--black);
+}
+
+
+
+
+
+
+
+/* */
+@media screen and (max-width: 770px) {
+    .notes-container {
+        margin: 2rem 0;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .note {
+        width: min(350px, calc(100vw - 24px));
+        height: 200px;
+        aspect-ratio: 750 / 415;
+        background-image: url('assets/paper-350.png');
+        background-size: 100% auto;
+        background-position: top left;
+        
+    }
+
+    h2 {
+        font-size:15px;
+    }
+
+    nav img {
+        width: 10px;
+        height: auto;
+    }
+
+  
+    .note-interior {
+        left: 23.333%;
+        top: 33.976%;
+        width: 66.667%;
+        max-width: 66.667%;
+        transform: rotate(-3.5deg);
+    }
+
+    .note-name {
+        font-size: clamp(1rem, 4.2vw, 1.4rem);
+        margin: 0 0 0.35rem 0;
+    }
+
+    .note-text {
+        font-size: clamp(0.69rem, 2.45vw, 0.82rem);
+        line-height: 1.2;
+    }
+
+    .note-interior p {
+        line-height: 1.2;
+    }
+
+    .instructions {
+        transform: translate(-15%, -810%) rotate(-2deg);
+    }
+
+    .instructions h3 {
+        font-size: 17px;
+    }
+
+    .notes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .centered-bottom-text {
+        transform: translate(-4%, -390%) rotate(-2deg);
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 6px;
+    }
+
+    input {
+        font-size: 6px;
+    }
+
+    li img {
+        height:auto;
+        width: 30px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .notes-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .note {
+       /* width: min(350px, calc(100vw - 24px));*/
+        width: 100%;
+        height: calc(100% + 50px);
+        aspect-ratio: 750 / 415;
+        background-image: url('assets/paper-700.png');
+        background-size: 100% auto;
+        background-position: top left;
+    }
+
+    .note-interior {
+        position: relative;
+    }
 }
