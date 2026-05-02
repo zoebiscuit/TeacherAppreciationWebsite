@@ -458,7 +458,7 @@ h4 {
 
     .note {
        /* width: min(350px, calc(100vw - 24px));*/
-        width: 100%;
+        /*width: 100%;*/
         height: calc(100% + 50px);
         aspect-ratio: 750 / 415;
         background-image: url('assets/paper-700.png');
