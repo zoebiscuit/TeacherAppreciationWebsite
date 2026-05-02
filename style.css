@@ -75,7 +75,8 @@ body {
     margin: 0;
     padding: 0;
     background: var(--secondary-color);
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     overflow-x: hidden;
     position: absolute;
 }
@@ -148,13 +149,19 @@ h3 {
     width: 100%;
     min-height: 100vh;
     /*height: 20000px;*/
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: start;
     grid-auto-rows: minmax(0px, auto);
-    gap: 5em;
+    /* gap: 5em; */
     /*grid-template-rows: repeat(auto-fill, minmax(500px, 3fr));*/
     margin: 4em 0;
 
+}
+
+@media (min-width: 1500px) {
+    .notes-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .notes-container img{
@@ -165,24 +172,33 @@ h3 {
 }
 
 .note {
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 0;
     padding: 0;
     aspect-ratio: 16/7;
     min-width: 0;
-    min-height: 1vw;
-    
+    min-height: 1vw; */
+    background-image: url('assets/paper-750.png');
+    background-position: top left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: table;
+    width: 750px;
+    height: 415px;
+    position: relative;
+    margin: 0 auto 50px auto;
 }
 
-.note:hover{
+/* .note:hover{
     transition: 100ms ease;
     transform: rotate(-2deg);
-}
+} */
 
-.note:not(:hover){
+/* .note:not(:hover){
     transition: 100ms ease;
-}
+} */
 
 input {
     font-family: 'roca','Times New Roman', Times, serif;
@@ -208,38 +224,98 @@ button:hover {
     scale: 1.05;
 }
 
+.note-interior {
+    /* position: relative; */
+    position: absolute;
+    margin: 0;
+    width: 600px;
+    /* background-color: black; */
+    transform: rotate(-3.5deg);
+    left: 175px;
+    top: 141px;
+    max-width: 500px;
+}
+
 .note-name {
-    position: relative;
+    /* position: relative; */
     /*top:-50%; */
-    width:60%;
+    width:90%;
     /*right: -50%; */
-    transform: translate(48%, -380%);
-    font-size: 2rem;
+    /* transform: translate(48%, -380%); */
+    font-size: 3rem;
     text-align: left;
     align-self:first baseline;
-    margin: 4rem;
+    /* margin: 4rem; */
+    margin: 0 0 1rem 0;
+}
+.note-name p {
+    margin: 0;
 }
 
 .note-text {
-    position: relative;
+    /* position: relative; */
     /*top:-50%; */
-    width:60%;
+    width:100%;
     /*right: -50%; */
-    transform: translate(48%, -282%);
+    /* transform: translate(48%, -282%); */
     font-size: 1.75rem;
     text-align: left;
     line-height: .8;
 
 }
 
-p {
+.note-interior p {
     font-family:'winkle','Times New Roman', Times, serif;
-    transform: rotate(-3.5deg);
+    /* transform: rotate(-3.5deg); */
     color: darkslategrey;
+    display: inline;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.25em;
 
 }
 
-.see-more h3:hover {
+@media (max-width: 770px) {
+    .notes-container {
+        margin: 2rem 0;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .note {
+        width: min(350px, calc(100vw - 24px));
+        height: auto;
+        aspect-ratio: 750 / 415;
+        background-image: url('assets/paper-350.png');
+        background-size: 100% auto;
+        background-position: top left;
+        
+    }
+
+    .note-interior {
+        left: 23.333%;
+        top: 33.976%;
+        width: 66.667%;
+        max-width: 66.667%;
+        transform: rotate(-3.5deg);
+    }
+
+    .note-name {
+        font-size: clamp(1rem, 4.2vw, 1.4rem);
+        margin: 0 0 0.35rem 0;
+    }
+
+    .note-text {
+        font-size: clamp(0.69rem, 2.45vw, 0.82rem);
+        line-height: 1.2;
+    }
+
+    .note-interior p {
+        line-height: 1.2;
+    }
+}
+
+/* .see-more h3:hover {
     text-decoration: underline;
     text-decoration-color: var(--third-color);
     text-decoration-thickness: 6px;
@@ -250,7 +326,7 @@ p {
 .see-more h3:not(:hover) {
     transition: 100ms ease;
     scale: 1;
-}
+} */
 
 .bottom {
     object-fit: cover;
@@ -270,28 +346,28 @@ p {
 #img-1 {
     transform: translate(-26%, -235%) scale(.5);
 }
-#img-1:hover {
+/* #img-1:hover {
     transition: 100ms ease;
     scale: 1.005;
-}
+} */
 
 #img-2 {
     transform: translate(1%, -150%) scale(.5);
 }
-#img-2:hover {
+/* #img-2:hover {
     transition: 100ms ease;
     scale: 1.005;
 
-}
+} */
 
 #img-3 {
     transform: translate(29%, -335%) scale(.5);
 }
-#img-3:hover {
+/* #img-3:hover {
     transition: 100ms ease;
     scale: 1.005;
 
-}
+} */
 
 h4 {
     font-size: 3rem;
@@ -309,117 +385,4 @@ h4 {
     line-height: 1;
     color: var(--black);
     text-shadow: 1px 1px 2px var(--black);
-}
-
-@media only screen and (min-width: 0px) and (max-width:1024px) {
-    h1 {
-        font-size: 8rem;
-    }
-
-    h2 {
-        font-size: 3.5rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-    nav ul {
-        gap: 1em;
-    }
-
-    .note-text {
-        font-size: 2.5rem;
-        width: 60%;
-        transform: translate(48%, -253%);
-    }
-
-    .notes-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(autofill, 1fr);
-        min-height: 100vh;
-    }
-
-    .instructions {
-        transform: rotate(-3deg) translate(-8%, -580%);
-        font-size: .1rem;
-    }
-
-    input {
-        font-size: 1.25rem;
-    }
-
-    button {
-        font-size: 1.25rem;
-    }
-
-    .note-name {
-        position: relative;
-    /*top:-50%; */
-        width:60%;
-        /*right: -50%; */
-        transform: translate(48%, -420%);
-        font-size: 2.5rem;
-        text-align: left;
-        align-self:first baseline;
-        margin: 4rem;
-    }
-
-    h4 {
-        font-size: 2.25rem;
-    }
-
-    .centered-bottom-text {
-        transform: translate(-3%, -450%) rotate(-1deg);
-    }
-
-
-}
-
-@media only screen and (min-width: 1920px){
-    .centered-bottom-text { 
-        transform: translate(-3%, -530%) rotate(-1deg);
-    }
-
-    h4 {
-        font-size: 60px;
-    }
-
-    h3 {
-        font-size: 90px;
-    }
-
-    .instructions {
-        transform: rotate(-3deg) translate(-12%, -310%);
-    }
-
-    h1 {
-        font-size: 230px;
-    }
-
-    h2 {
-        font-size: 50px;
-    }
-
-    p {
-        font-size:2.5rem;
-        color: red;
-    }
-
-    .note-text {
-        width: 58%;
-        transform: translate(48%, -232%);
-    }
-
-    .note-name {
-        transform: translate(48%, -410%);
-    }
-
-    button {
-        font-size: 25px;
-    }
-
-    input {
-        font-size: 23px;
-    }
 }
