@@ -22,3 +22,4 @@ Computer Science Officer for testing the website <br>
 Students from Computer Science Club for writing most of the notes <br>
 W3 schools <br>
 Stack Overflow Threads <br>
+My dad for helping me with sizing of cards omg i luv u
