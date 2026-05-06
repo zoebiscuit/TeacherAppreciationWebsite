@@ -475,10 +475,10 @@ footer h3{
 
 @media screen and (min-width: 1900px) {
     .note-text p{
-        font-size: 30px; /*i changed text and name by -10px */
+        font-size: 40px; /*didn't ***** i changed text and name by -10px */
     }
     .note-name p{
-        font-size: 45px;
+        font-size: 55px;
     }
 
     .note-interior p{
